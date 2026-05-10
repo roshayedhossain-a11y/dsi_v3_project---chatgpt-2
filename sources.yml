@@ -1,0 +1,1375 @@
+settings:
+  purpose: Only final CSV is uploaded. Failed sources are skipped quietly. Add more
+    verified small/mid remote-first company boards here.
+sources:
+- name: Remotive API Engineering Bundle
+  type: remotive_api
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_board
+  categories:
+  - software-dev
+  - devops-sysadmin
+  - data
+  limit: 500
+  delay_seconds: 1.0
+- name: Jobicy API Engineering Bundle
+  type: jobicy_api
+  enabled: true
+  trust_score: 5
+  source_type_label: trusted_remote_board
+  industries:
+  - engineering
+  - software-development
+  - devops-sysadmin
+  limit: 50
+  delay_seconds: 1.0
+- name: RemoteOK Public API
+  type: remoteok_api
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_board
+  delay_seconds: 2.0
+- name: Arbeitnow Remote API
+  type: arbeitnow_api
+  enabled: true
+  trust_score: 4
+  source_type_label: aggregator_api
+  max_pages: 10
+  delay_seconds: 1.0
+- name: Himalayas Remote API
+  type: himalayas_api
+  enabled: true
+  trust_score: 7
+  source_type_label: trusted_remote_board
+  queries:
+  - backend engineer
+  - frontend engineer
+  - full stack engineer
+  - software engineer
+  - devops engineer
+  - platform engineer
+  - site reliability engineer
+  - qa automation engineer
+  - data engineer
+  - machine learning engineer
+  - mobile engineer
+  - python developer
+  - react developer
+  - node developer
+  limit: 100
+  delay_seconds: 1.0
+- name: WeWorkRemotely Programming RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_rss
+  url: https://weworkremotely.com/categories/remote-programming-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+  delay_seconds: 1.0
+- name: WeWorkRemotely DevOps RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_rss
+  url: https://weworkremotely.com/categories/remote-devops-sysadmin-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+  delay_seconds: 1.0
+- name: WeWorkRemotely Fullstack RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_rss
+  url: https://weworkremotely.com/categories/remote-full-stack-programming-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+  delay_seconds: 1.0
+- name: WeWorkRemotely Backend RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_rss
+  url: https://weworkremotely.com/categories/remote-back-end-programming-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+  delay_seconds: 1.0
+- name: WeWorkRemotely Frontend RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_rss
+  url: https://weworkremotely.com/categories/remote-front-end-programming-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+  delay_seconds: 1.0
+- name: Python.org Remote Jobs RSS
+  type: rss
+  enabled: true
+  trust_score: 5
+  source_type_label: trusted_remote_rss
+  url: https://www.python.org/jobs/feed/rss/
+  title_format: plain
+  default_location: Remote
+  delay_seconds: 1.0
+- name: Remote.co Programming RSS
+  type: rss
+  enabled: true
+  trust_score: 5
+  source_type_label: trusted_remote_rss
+  url: https://remote.co/remote-jobs/developer/feed/
+  title_format: plain
+  default_location: Remote
+  delay_seconds: 1.0
+- name: WorkingNomads Development RSS
+  type: rss
+  enabled: true
+  trust_score: 5
+  source_type_label: trusted_remote_rss
+  url: https://www.workingnomads.com/jobsapi/xml/remote-development-jobs
+  title_format: plain
+  default_location: Remote
+  delay_seconds: 1.0
+- name: NoDesk Remote Jobs RSS
+  type: rss
+  enabled: true
+  trust_score: 5
+  source_type_label: trusted_remote_rss
+  url: https://nodesk.co/remote-jobs/rss/
+  title_format: plain
+  default_location: Remote
+  delay_seconds: 1.0
+- name: FreshRemote Developer RSS
+  type: rss
+  enabled: true
+  trust_score: 5
+  source_type_label: trusted_remote_rss
+  url: https://freshremote.work/feed/
+  title_format: plain
+  default_location: Remote
+  delay_seconds: 1.0
+- name: Ashby Cal.com
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: cal.com
+  company_name: Cal.com
+  company_domain: cal.com
+  company_website: https://cal.com
+  company_meta:
+    company_domain: cal.com
+    company_website: https://cal.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Resend
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: resend
+  company_name: Resend
+  company_domain: resend.com
+  company_website: https://resend.com
+  company_meta:
+    company_domain: resend.com
+    company_website: https://resend.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Convex
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: convex
+  company_name: Convex
+  company_domain: convex.dev
+  company_website: https://convex.dev
+  company_meta:
+    company_domain: convex.dev
+    company_website: https://convex.dev
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Raycast
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: raycast
+  company_name: Raycast
+  company_domain: raycast.com
+  company_website: https://raycast.com
+  company_meta:
+    company_domain: raycast.com
+    company_website: https://raycast.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United Kingdom
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Browserbase
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: browserbase
+  company_name: Browserbase
+  company_domain: browserbase.com
+  company_website: https://browserbase.com
+  company_meta:
+    company_domain: browserbase.com
+    company_website: https://browserbase.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Clerk
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: clerk
+  company_name: Clerk
+  company_domain: clerk.com
+  company_website: https://clerk.com
+  company_meta:
+    company_domain: clerk.com
+    company_website: https://clerk.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Deno
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: deno
+  company_name: Deno
+  company_domain: deno.com
+  company_website: https://deno.com
+  company_meta:
+    company_domain: deno.com
+    company_website: https://deno.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Inngest
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: inngest
+  company_name: Inngest
+  company_domain: inngest.com
+  company_website: https://inngest.com
+  company_meta:
+    company_domain: inngest.com
+    company_website: https://inngest.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Modal
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: modal
+  company_name: Modal
+  company_domain: modal.com
+  company_website: https://modal.com
+  company_meta:
+    company_domain: modal.com
+    company_website: https://modal.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: AI infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Railway
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: railway
+  company_name: Railway
+  company_domain: railway.app
+  company_website: https://railway.app
+  company_meta:
+    company_domain: railway.app
+    company_website: https://railway.app
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Cloud infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Trigger.dev
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: trigger.dev
+  company_name: Trigger.dev
+  company_domain: trigger.dev
+  company_website: https://trigger.dev
+  company_meta:
+    company_domain: trigger.dev
+    company_website: https://trigger.dev
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United Kingdom
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Unkey
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: unkey
+  company_name: Unkey
+  company_domain: unkey.com
+  company_website: https://unkey.com
+  company_meta:
+    company_domain: unkey.com
+    company_website: https://unkey.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: Germany
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Qdrant
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: qdrant
+  company_name: Qdrant
+  company_domain: qdrant.tech
+  company_website: https://qdrant.tech
+  company_meta:
+    company_domain: qdrant.tech
+    company_website: https://qdrant.tech
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: Germany
+    company_type: AI infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Replicate
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: replicate
+  company_name: Replicate
+  company_domain: replicate.com
+  company_website: https://replicate.com
+  company_meta:
+    company_domain: replicate.com
+    company_website: https://replicate.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: AI infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Fireworks AI
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: fireworks
+  company_name: Fireworks AI
+  company_domain: fireworks.ai
+  company_website: https://fireworks.ai
+  company_meta:
+    company_domain: fireworks.ai
+    company_website: https://fireworks.ai
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: AI infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Groq
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: groq
+  company_name: Groq
+  company_domain: groq.com
+  company_website: https://groq.com
+  company_meta:
+    company_domain: groq.com
+    company_website: https://groq.com
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: AI infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Together AI
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: together-ai
+  company_name: Together AI
+  company_domain: together.ai
+  company_website: https://together.ai
+  company_meta:
+    company_domain: together.ai
+    company_website: https://together.ai
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: AI infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby LangChain
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: langchain
+  company_name: LangChain
+  company_domain: langchain.com
+  company_website: https://langchain.com
+  company_meta:
+    company_domain: langchain.com
+    company_website: https://langchain.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: AI developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Mintlify
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: mintlify
+  company_name: Mintlify
+  company_domain: mintlify.com
+  company_website: https://mintlify.com
+  company_meta:
+    company_domain: mintlify.com
+    company_website: https://mintlify.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Plane
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: plane
+  company_name: Plane
+  company_domain: plane.so
+  company_website: https://plane.so
+  company_meta:
+    company_domain: plane.so
+    company_website: https://plane.so
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby PostHog
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: posthog
+  company_name: PostHog
+  company_domain: posthog.com
+  company_website: https://posthog.com
+  company_meta:
+    company_domain: posthog.com
+    company_website: https://posthog.com
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Neon
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: neon
+  company_name: Neon
+  company_domain: neon.tech
+  company_website: https://neon.tech
+  company_meta:
+    company_domain: neon.tech
+    company_website: https://neon.tech
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Supabase
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: supabase
+  company_name: Supabase
+  company_domain: supabase.com
+  company_website: https://supabase.com
+  company_meta:
+    company_domain: supabase.com
+    company_website: https://supabase.com
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: Singapore
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby WorkOS
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: workos
+  company_name: WorkOS
+  company_domain: workos.com
+  company_website: https://workos.com
+  company_meta:
+    company_domain: workos.com
+    company_website: https://workos.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Zed
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: zed
+  company_name: Zed
+  company_domain: zed.dev
+  company_website: https://zed.dev
+  company_meta:
+    company_domain: zed.dev
+    company_website: https://zed.dev
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Airbyte
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: airbyte
+  company_name: Airbyte
+  company_domain: airbyte.com
+  company_website: https://airbyte.com
+  company_meta:
+    company_domain: airbyte.com
+    company_website: https://airbyte.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Astronomer
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: astronomer
+  company_name: Astronomer
+  company_domain: astronomer.io
+  company_website: https://astronomer.io
+  company_meta:
+    company_domain: astronomer.io
+    company_website: https://astronomer.io
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Census
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: census
+  company_name: Census
+  company_domain: getcensus.com
+  company_website: https://getcensus.com
+  company_meta:
+    company_domain: getcensus.com
+    company_website: https://getcensus.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Dagster
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: dagster
+  company_name: Dagster
+  company_domain: dagster.io
+  company_website: https://dagster.io
+  company_meta:
+    company_domain: dagster.io
+    company_website: https://dagster.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Gitpod
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: gitpod
+  company_name: Gitpod
+  company_domain: gitpod.io
+  company_website: https://gitpod.io
+  company_meta:
+    company_domain: gitpod.io
+    company_website: https://gitpod.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: Germany
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Hightouch
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: hightouch
+  company_name: Hightouch
+  company_domain: hightouch.com
+  company_website: https://hightouch.com
+  company_meta:
+    company_domain: hightouch.com
+    company_website: https://hightouch.com
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Honeycomb
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: honeycomb
+  company_name: Honeycomb
+  company_domain: honeycomb.io
+  company_website: https://honeycomb.io
+  company_meta:
+    company_domain: honeycomb.io
+    company_website: https://honeycomb.io
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Linear
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: linear
+  company_name: Linear
+  company_domain: linear.app
+  company_website: https://linear.app
+  company_meta:
+    company_domain: linear.app
+    company_website: https://linear.app
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Metabase
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: metabase
+  company_name: Metabase
+  company_domain: metabase.com
+  company_website: https://metabase.com
+  company_meta:
+    company_domain: metabase.com
+    company_website: https://metabase.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Data SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Prefect
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: prefect
+  company_name: Prefect
+  company_domain: prefect.io
+  company_website: https://prefect.io
+  company_meta:
+    company_domain: prefect.io
+    company_website: https://prefect.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Render
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: render
+  company_name: Render
+  company_domain: render.com
+  company_website: https://render.com
+  company_meta:
+    company_domain: render.com
+    company_website: https://render.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Cloud infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Redpanda
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: redpanda
+  company_name: Redpanda
+  company_domain: redpanda.com
+  company_website: https://redpanda.com
+  company_meta:
+    company_domain: redpanda.com
+    company_website: https://redpanda.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Sanity
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: sanity
+  company_name: Sanity
+  company_domain: sanity.io
+  company_website: https://sanity.io
+  company_meta:
+    company_domain: sanity.io
+    company_website: https://sanity.io
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: Norway
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Semgrep
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: semgrep
+  company_name: Semgrep
+  company_domain: semgrep.dev
+  company_website: https://semgrep.dev
+  company_meta:
+    company_domain: semgrep.dev
+    company_website: https://semgrep.dev
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Security SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Spacelift
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: spacelift
+  company_name: Spacelift
+  company_domain: spacelift.io
+  company_website: https://spacelift.io
+  company_meta:
+    company_domain: spacelift.io
+    company_website: https://spacelift.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: DevOps SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Stytch
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: stytch
+  company_name: Stytch
+  company_domain: stytch.com
+  company_website: https://stytch.com
+  company_meta:
+    company_domain: stytch.com
+    company_website: https://stytch.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Svix
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: svix
+  company_name: Svix
+  company_domain: svix.com
+  company_website: https://svix.com
+  company_meta:
+    company_domain: svix.com
+    company_website: https://svix.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Tailscale
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: tailscale
+  company_name: Tailscale
+  company_domain: tailscale.com
+  company_website: https://tailscale.com
+  company_meta:
+    company_domain: tailscale.com
+    company_website: https://tailscale.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: Canada
+    company_type: Cloud infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Temporal
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: temporal
+  company_name: Temporal
+  company_domain: temporal.io
+  company_website: https://temporal.io
+  company_meta:
+    company_domain: temporal.io
+    company_website: https://temporal.io
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Turso
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: turso
+  company_name: Turso
+  company_domain: turso.tech
+  company_website: https://turso.tech
+  company_meta:
+    company_domain: turso.tech
+    company_website: https://turso.tech
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Windmill
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: windmill
+  company_name: Windmill
+  company_domain: windmill.dev
+  company_website: https://windmill.dev
+  company_meta:
+    company_domain: windmill.dev
+    company_website: https://windmill.dev
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: France
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse GrowthBook
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: growthbook
+  company_name: GrowthBook
+  company_domain: growthbook.io
+  company_website: https://growthbook.io
+  company_meta:
+    company_domain: growthbook.io
+    company_website: https://growthbook.io
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Incident.io
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: incident-io
+  company_name: Incident.io
+  company_domain: incident.io
+  company_website: https://incident.io
+  company_meta:
+    company_domain: incident.io
+    company_website: https://incident.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United Kingdom
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Orb
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: orb
+  company_name: Orb
+  company_domain: withorb.com
+  company_website: https://withorb.com
+  company_meta:
+    company_domain: withorb.com
+    company_website: https://withorb.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Fintech SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Permit.io
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: permit-io
+  company_name: Permit.io
+  company_domain: permit.io
+  company_website: https://permit.io
+  company_meta:
+    company_domain: permit.io
+    company_website: https://permit.io
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse SigNoz
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: signoz
+  company_name: SigNoz
+  company_domain: signoz.io
+  company_website: https://signoz.io
+  company_meta:
+    company_domain: signoz.io
+    company_website: https://signoz.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Speakeasy
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: speakeasy
+  company_name: Speakeasy
+  company_domain: speakeasy.com
+  company_website: https://speakeasy.com
+  company_meta:
+    company_domain: speakeasy.com
+    company_website: https://speakeasy.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Chainguard
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: chainguard
+  company_name: Chainguard
+  company_domain: chainguard.dev
+  company_website: https://chainguard.dev
+  company_meta:
+    company_domain: chainguard.dev
+    company_website: https://chainguard.dev
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Security SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Hotjar
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: hotjar
+  company_name: Hotjar
+  company_domain: hotjar.com
+  company_website: https://hotjar.com
+  company_meta:
+    company_domain: hotjar.com
+    company_website: https://hotjar.com
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: Malta
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Slab
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: slab
+  company_name: Slab
+  company_domain: slab.com
+  company_website: https://slab.com
+  company_meta:
+    company_domain: slab.com
+    company_website: https://slab.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Tremendous
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: tremendous
+  company_name: Tremendous
+  company_domain: tremendous.com
+  company_website: https://tremendous.com
+  company_meta:
+    company_domain: tremendous.com
+    company_website: https://tremendous.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Fintech SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Pilot
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: pilot
+  company_name: Pilot
+  company_domain: pilot.com
+  company_website: https://pilot.com
+  company_meta:
+    company_domain: pilot.com
+    company_website: https://pilot.com
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Fintech SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Ironclad
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: ironclad
+  company_name: Ironclad
+  company_domain: ironcladapp.com
+  company_website: https://ironcladapp.com
+  company_meta:
+    company_domain: ironcladapp.com
+    company_website: https://ironcladapp.com
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Leapsome
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: leapsome
+  company_name: Leapsome
+  company_domain: leapsome.com
+  company_website: https://leapsome.com
+  company_meta:
+    company_domain: leapsome.com
+    company_website: https://leapsome.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: Germany
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Mural
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: mural
+  company_name: Mural
+  company_domain: mural.co
+  company_website: https://mural.co
+  company_meta:
+    company_domain: mural.co
+    company_website: https://mural.co
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Expensify
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: expensify
+  company_name: Expensify
+  company_domain: expensify.com
+  company_website: https://expensify.com
+  company_meta:
+    company_domain: expensify.com
+    company_website: https://expensify.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Fintech SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Gem
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: gem
+  company_name: Gem
+  company_domain: gem.com
+  company_website: https://gem.com
+  company_meta:
+    company_domain: gem.com
+    company_website: https://gem.com
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Nauto
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: nauto
+  company_name: Nauto
+  company_domain: nauto.com
+  company_website: https://nauto.com
+  company_meta:
+    company_domain: nauto.com
+    company_website: https://nauto.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: AI SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever NinjaTrader
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: ninjatrader
+  company_name: NinjaTrader
+  company_domain: ninjatrader.com
+  company_website: https://ninjatrader.com
+  company_meta:
+    company_domain: ninjatrader.com
+    company_website: https://ninjatrader.com
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Fintech SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Qatalog
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: qatalog
+  company_name: Qatalog
+  company_domain: qatalog.com
+  company_website: https://qatalog.com
+  company_meta:
+    company_domain: qatalog.com
+    company_website: https://qatalog.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United Kingdom
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Replit
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: replit
+  company_name: Replit
+  company_domain: replit.com
+  company_website: https://replit.com
+  company_meta:
+    company_domain: replit.com
+    company_website: https://replit.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Benchling
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: benchling
+  company_name: Benchling
+  company_domain: benchling.com
+  company_website: https://benchling.com
+  company_meta:
+    company_domain: benchling.com
+    company_website: https://benchling.com
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Clipboard Health
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: clipboard-health
+  company_name: Clipboard Health
+  company_domain: clipboardhealth.com
+  company_website: https://clipboardhealth.com
+  company_meta:
+    company_domain: clipboardhealth.com
+    company_website: https://clipboardhealth.com
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Healthtech
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
